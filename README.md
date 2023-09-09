@@ -54,8 +54,8 @@ ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]
    docker image ls
    ```
 
-3. **Start the Container**:
 
+3. **Start the Container**:
 
    ![Alt text](image-1.png)
    
@@ -83,6 +83,19 @@ ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
    ![Alt text](<Screenshot 2023-09-09 120736.png>)
 
-5. **Issues**:
 
-   If you encounter any issues, please open an issue on the GitHub repository.
+5. **Check and confirm the container running theb stop the container**:
+
+run the command:
+
+```bash
+   docker ps
+   ```
+
+to stop the container, run command
+
+```bash
+   docker stop "enter container ID here"
+   ```
+
+The container has been successfully stopped.
