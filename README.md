@@ -9,6 +9,14 @@ Jupiter is a web application hosted using the Apache HTTP Server on Amazon Linux
 
 - [Docker](https://www.docker.com/get-started) installed on your machine.
 
+## Dockerfile Breakdown
+
+- **Base Image**: Uses the latest version of Amazon Linux.
+- **Dependencies**: Installs the Apache HTTP Server, `wget` for downloading files, and `unzip` for extracting zip files.
+- **Web Files**: Downloads and sets up web files from the `jupiter` repository.
+- **Port**: Exposes port 80 for the Apache HTTP Server.
+- **Entry Point**: The default application that runs when the container starts is the Apache HTTP Server.
+
 ## Getting Started
 
 1. **Clone the Repository**:
@@ -47,19 +55,3 @@ Jupiter is a web application hosted using the Apache HTTP Server on Amazon Linux
    ```
 
    You should now see the Jupiter web application running.
-
-## Dockerfile Breakdown
-
-- **Base Image**: Uses the latest version of Amazon Linux.
-- **Dependencies**: Installs the Apache HTTP Server, `wget` for downloading files, and `unzip` for extracting zip files.
-- **Web Files**: Downloads and sets up web files from the `jupiter` repository.
-- **Port**: Exposes port 80 for the Apache HTTP Server.
-- **Entry Point**: The default application that runs when the container starts is the Apache HTTP Server.
-
-## Contributing
-
-If you'd like to contribute, please fork the repository and make changes as you'd like. Pull requests are warmly welcome.
-
-## Issues
-
-If you encounter any issues, please open an issue on the GitHub repository.
