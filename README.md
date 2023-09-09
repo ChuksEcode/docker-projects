@@ -54,4 +54,7 @@ Jupiter is a web application hosted using the Apache HTTP Server on Amazon Linux
    http://localhost:8080
    ```
 
-   You should now see the Jupiter web application running.
+   Here We Go! You should now see the Jupiter web application running.
+
+5. **Issues**:
+   If you encounter any issues, please open an issue on the GitHub repository.
