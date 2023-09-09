@@ -31,30 +31,43 @@ Jupiter is a web application hosted using the Apache HTTP Server on Amazon Linux
    Navigate to the root directory of the project where the `Dockerfile` is located and run:
 
    ```bash
-   docker build -t jupiter-webapp .
+   docker build -t jupiter .
    ```
 
-   This will build a Docker image named `jupiter-webapp`.
+   This will build a Docker image named `jupiter`.
 
-3. **Run the Container**:
+   To view the image just built run this command:
 
+   ```bash
+   docker image ls
+   ```
+
+3. **Start the Container**:
+
+   ![Alt text](image.png)
+   
    Once the image is built, you can start a container:
 
    ```bash
-   docker run -d -p 8080:80 jupiter-webapp
+   docker run -dp 80:80 jupiter
    ```
 
-   This command runs the container in detached mode, mapping port 8080 on your host to port 80 on the container.
+   Here we go You have successfully started the container in detached mode, mapping port on your host to port 80 on the container.
+
+   To see your jupiter website, carry out the next step
+
 
 4. **Access the Application**:
 
-   Open a web browser and navigate to:
+   Open a web browser and type or copy and paste the command in it:
 
    ```
-   http://localhost:8080
+   http://localhost:80
    ```
 
    Here We Go! You should now see the Jupiter web application running.
+
+   ![Alt text](<Screenshot 2023-09-09 120736.png>)
 
 5. **Issues**:
 
