@@ -44,7 +44,7 @@ Jupiter is a web application hosted using the Apache HTTP Server on Amazon Linux
 
 3. **Start the Container**:
 
-   ![Alt text](image.png)
+   ![Alt text](image-1.png)
    
    Once the image is built, you can start a container:
 
